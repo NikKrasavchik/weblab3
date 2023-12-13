@@ -560,8 +560,9 @@ html {
     }
 
     .vid {
-        min-width: 2400px;
-        margin: 140px -140px;
+        min-width: 100%;
+        margin-top: 140px;
+        margin-bottom: 140px;
     }
 
     .playvid {
