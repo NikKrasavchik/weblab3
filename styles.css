@@ -246,7 +246,6 @@ html {
     }
     
     .vid {
-        width: 100%;
         margin: 60px auto;
     }
     
@@ -259,7 +258,7 @@ html {
     .foot {
         background-image: url("Sources/img21.svg");
         height: 580px;
-        width: 100%;
+        margin-right: -14px;
         text-align: center;
         padding: 24px;
         margin-left: -24px;
@@ -365,7 +364,7 @@ html {
 
 @media screen and (min-width: 1430px) {	
     .headerImage {
-        background-image: url("Sources/img25.svg");
+        background-image: url("Sources/img25.jpeg");
         text-align: center;
         background-repeat: repeat;
     }
