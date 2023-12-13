@@ -85,7 +85,7 @@ html {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1430px) {
     .headerImage {
         background-image: url("Sources/img1.png");
         text-align: center;
@@ -363,7 +363,7 @@ html {
     }
 }
 
-@media screen and (min-width: 1480px) {	
+@media screen and (min-width: 1430px) {	
     .headerImage {
         background-image: url("Sources/img25.svg");
         text-align: center;

@@ -56,3 +56,34 @@
   grid-area: 4 / 4 / 4 / 7;
   padding: 10px;
 }
+
+.ram-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  grid-auto-rows: 120px;
+  grid-auto-flow: row;
+  gap: 2px;
+}
+
+.ram-subgrid{
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
+}
+
+.ram-img{
+  width: 100%;
+  margin: auto;
+  grid-area: 1/1/4/4;
+
+}
+
+.ram-text{
+  grid-area: 2/1/3/4;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 900;
+  color: white;
+  background-color: #0000006d;
+  margin: auto;
+}
