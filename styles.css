@@ -1,0 +1,681 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --grey-color: #545E76;
+    --white-color: white;
+    --red-color: #F31B62;
+    min-width: 455px;
+    max-width: 1480;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+.notDispleyed {
+    display: none;
+}
+
+.applicationBtn {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    padding: 18px 48px;
+    width: 280px;
+    height: 60px;
+    justify-content: right;
+}
+
+.whereToEat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trippleP {
+    text-align: left;
+}
+
+.adding {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1480px) {
+    .headerImage {
+        background-image: url("Sources/img1.png");
+        text-align: center;
+        background-repeat: repeat;
+    }
+
+    .smallDisplayNotDisplay {
+        display: none;
+    }
+
+    .bigDisplayHeaderContact {
+        display: none;
+    }
+
+    .headerImage {
+        height: 580px;
+    }
+    
+    header {
+        color: var(--white-color);
+    }
+    
+    h2 {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    .redText {
+        color: var(--red-color);
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    
+    .smallText {
+        font-size: 1.4rem;
+        font-weight: 400;
+        min-width: 40px;
+
+    }
+    .smallText1 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-top: 60px;
+    }
+    
+    .butcherName {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: var(--grey-color);
+        margin-top: 40px;
+    }
+    
+    .biggestText {
+        font-size: 3.3rem;
+        font-weight: 500;
+    }
+    main {
+        padding: 60px 14px 0px 24px;
+    }
+    .regularText {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+    .bigText {
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-top: 56px;
+    }
+    
+    .name {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    
+    .table {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 120%;
+        padding-top: 40px;
+    }
+    
+    .whiteBtnText {
+        color: var(--white-color);
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 170%;
+    }
+    
+    .bigNumbers {
+        font-size: 4rem;
+        font-weight: 500;
+        float: left;
+        padding-right: 8px;
+    }
+    
+    .plus {
+        font-size: 4rem;
+        font-weight: 400;
+        color: var(--grey-color);
+    }
+    
+    footer {
+        color: var(--grey-color);
+        margin: 40px 24px;
+    }
+    
+    .whiteText {
+        color: var(--white-color);
+    }
+    
+    
+    .notDispleyedBtn {
+        border: 0;
+        float: right;
+        position: relative;
+        background-color: transparent;
+        padding: 24px;
+    }
+    
+    .blockH2 {
+        position: relative;
+        padding-left: 85px;
+        padding-top: 10px;
+    }
+    
+    .headingBlock {
+        position: relative; 
+        top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    
+    .text {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .mezh {
+        padding-bottom: 20px;
+    }
+    
+    .tripple {
+        display: inline-block;
+        max-width: 140px;
+        margin-top: 24px;
+        margin-right: 40px;
+    }
+    
+    .kovichki {
+        position: absolute;
+        left: 20px;
+        bottom: -34px;
+    }
+    
+    .vid {
+        width: 100%;
+        margin: 60px auto;
+    }
+    
+    .playvid {
+        position: absolute;
+        left: 43%;
+        bottom: 42%;
+    }
+    
+    .foot {
+        background-image: url("Sources/img21.svg");
+        height: 580px;
+        width: 100%;
+        text-align: center;
+        padding: 24px;
+        margin-left: -24px;
+        background-color: #222733;
+    }
+    
+    .backButton {
+        background-color: transparent;
+        background-image: none; 
+        border: 0;
+    }
+    
+    .imgDiv {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 327px;
+        margin-bottom: 55px;
+    }
+    
+    .footSmallText {
+        color: white;
+        text-align: left;
+        font-size: 1.4rem;
+        font-weight:200;
+        padding-top: 60px;
+    }
+    .footBigText {
+        color: white;
+        text-align: left;
+        font-size: 2.6rem;
+        font-weight:200;
+        padding-top: 60px;
+        padding-right: 24px;
+    }
+    
+    .kovichki2 {
+        float: left;
+    }
+
+    a {
+        height: 30px;
+        margin: 0px 10px;
+        display: inline-block;
+    }
+    
+    .grid{
+        text-decoration: none;
+        margin: 0 auto;
+        color: var(--grey-color) ;
+    }
+
+    .headerWelcome {
+        margin-left: 40px;
+    }
+
+    .headerComment {
+        font-weight: 200;
+    }
+
+    .whereToEat {
+        margin-top: 32px;
+    }
+
+    .stack {
+        text-align: center;
+    }
+
+    .firstStack {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section2 {
+        margin-top: 100px;
+    }
+
+    .double {
+        display: flex;
+    }
+
+    .marginP {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .doubleMargin {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .footerDiv {
+        padding: 32px 0px;
+    }
+
+    .footerConnect {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1480px) {	
+    .headerImage {
+        background-image: url("Sources/img25.svg");
+        text-align: center;
+        background-repeat: repeat;
+    }
+    main {
+        margin: 140px 130px 0px 140px;
+    }
+
+    header {
+        padding-top: 32px;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .bigDisplayHeaderContact {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bigPContactWhiteText {
+        color: var(--white-color);
+        font-weight: 100;
+        opacity: 0.6;
+    }
+
+    .bigDisplayNotDisplay {
+        display: none;
+    }
+
+    .notDispleyedBtn {
+        border: 0;
+        position: relative;
+        background-color: transparent;
+        color: var(--white-color);
+    }
+    .container1 {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blockH2 {
+        color: var(--white-color);
+        font-size: 4rem;
+        font-weight: 100;
+    }
+
+    .headingBlock {
+        margin-top: 285px;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .headerWelcome {
+        color: var(--white-color);
+        font-weight: 100;
+        opacity: 0.8;
+    }
+
+    .headerBig {
+        margin-top: 16px;
+        font-size: 7rem;
+        color: var(--white-color);
+        font-weight: 500;
+        max-width: 70%;
+    }
+
+    .headerComment {
+        margin-top: 20px;
+        margin-bottom: 120px;
+        font-size: 1.4rem;
+        color: var(--white-color);
+        font-weight: 200;
+        opacity: 0.8;
+        max-width: 70%;
+        padding-right: 30px;
+    }
+
+    .rightHeader {
+        margin-top: 30px;
+    }
+
+    .flex {
+        display: flex
+    }
+
+    .whereToEat {
+        margin-left: 60px;
+    }
+
+    .redText {
+        color: var(--red-color);
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .section1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rightSection1 {
+        margin-left: 265px;
+    }
+
+    .table {
+        font-size: 4rem;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .mezhRight {
+        line-height: 25px;
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+
+    .blackButton {
+        color: var(--white-color);
+        background-color: black;
+        padding: 24px;
+        width: 280px;
+        height: 60px;
+    }
+
+    .smallText {
+        font-weight: 300;
+        opacity: 0.8;
+    }
+
+    .stack {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .numPlus {
+        display: flex;
+    }
+
+    .bigNumbers {
+        font-size: 4.8rem;
+    }
+
+    .plus {
+        font-size: 4rem;
+        color: var(--grey-color);
+        margin-left: 16px;
+    }
+
+    .trippleP {
+        margin-top: 25px;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: var(--grey-color);
+    }
+
+    .section2 {
+        margin-top: 140px;
+        display: flex;
+    }
+
+    .imgBig {
+        width: 100%;
+    }
+
+    .imgDiv {
+        width: 900px;
+    }
+
+    .kovichki {
+        display: none;
+    }
+
+    .secondRightText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .kovichki3 {
+        width: 68px;
+    }
+
+    .bigText2 {
+        font-size: 2.8rem;
+        max-width: 1200px;
+    }
+
+    .vid {
+        min-width: 2400px;
+        margin: 140px -140px;
+    }
+
+    .playvid {
+        position: absolute;
+        left: 1%;
+        bottom: 20%;
+    }
+
+    .butcherName {
+        font-size: 1.8rem;
+        opacity: 0.8;
+        font-weight: 200;
+    }
+
+    .name {
+        margin-top: 12px;
+        font-size: 2.6rem;
+        font-weight: 600;
+    }
+
+    .section3 {
+        display: flex;
+    }
+    
+    .why {
+        min-width: 60px;
+    }
+
+    .rightSection2 {
+        margin-left: 265px;
+    }
+
+    .doubleMargin {
+        margin-top: 100px;
+        display: flex;
+    }
+
+    .doubledoubleMezh {
+        margin-top: 70px;
+    }
+
+    .marginP {
+        margin-top: 20px;
+        font-size: 1.6rem;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    .doubleMezh {
+        width: 120px;
+    }
+
+    .foot {
+        background-image: url("Sources/img24.svg");
+        margin-left: -140px;
+        margin-right: -140px;
+        margin-top: 140px;
+        background-color: #222733;
+        display: flex;
+        flex-wrap: wrap;
+        color: var(--white-color);
+        padding: 160px 130px;
+    }
+
+    .footSmallText {
+        width: 100px;
+    }
+
+    .rightFooter {
+        margin-left: 230px;
+    }
+
+    .footBigText {
+        margin-top: 40px;
+        font-size: 4rem;
+    }
+
+    .backButton {
+        background-color: transparent;
+        background-image: none; 
+        border: 0;
+    }
+
+    .footerFoot {
+        display: flex;
+        margin-top: 95px;
+        justify-content: space-between;
+    }
+
+    .footerfooter {
+        margin: 44px 130px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerConnect {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerleft {
+        display: flex;
+    }
+
+    .space40 {
+        width: 40px;
+    }
+
+    .footerP {
+        margin-right: 40px;
+        font-size: 1.4rem;
+    }
+
+    .a_footer {
+        margin-left: 20px;
+    }
+}
