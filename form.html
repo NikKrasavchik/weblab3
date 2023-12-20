@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" rel="stylesheet" type="text/css" />
+    <title>Form</title>
+</head>
+<body>
+    <header class="headerImage">
+        <div>
+            <h1 class="notDispleyed">MainPage</h1>
+            <div class="bigDisplayHeaderContact">
+                <p class="bigPContactWhiteText">Лучший кейтеринг в Санкт-Петербурге</p>
+                <div style="display: flex;">
+                    <p class="bigPContactWhiteText">+7 921 123 45 67</p>
+                    <div style="width: 32px;"></div>
+                    <p class="bigPContactWhiteText">contact@nordic-c.ru</p>
+                </div>
+            </div>
+            <div>
+                <button class="notDispleyedBtn bigDisplayNotDisplay ">
+                    <img src="/Sources/img18.png" alt="Menu">
+                </button>
+                <div class="container1">
+                    <a class="mainpage" href="index.html"><h2 class="blockH2">Nordic</h2></a>
+                    <div class="smallDisplayNotDisplay">
+                        <button class="bigDisplayMenu whiteBtnText notDispleyedBtn">
+                            <p style="display: inline-block;">Вид кейтеринга</p>
+                            <img src="Sources/img22.svg" alt="">
+                        </button>
+                        <button class="bigDisplayMenu bigDisplayMenu whiteBtnText notDispleyedBtn">
+                            <p style="display: inline-block;">События</p>
+                            <img src="Sources/img22.svg" alt="">
+                        </button>
+                        <button class="bigDisplayMenu whiteBtnText notDispleyedBtn">
+                            <p style="display: inline-block;">Площадки</p>
+                            <img src="Sources/img22.svg" alt="">
+                        </button>
+                        <button class="bigDisplayMenu whiteBtnText notDispleyedBtn">
+                            <p style="display: inline-block;">Услуги</p>
+                            <img src="Sources/img22.svg" alt="">
+                        </button>
+                        <button class="bigDisplayMenu whiteBtnText notDispleyedBtn">
+                            <p style="display: inline-block;">О компании</p>
+                            <img src="Sources/img22.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="regp">Регистрация нового пользователя</p>
+    </header>
+    <main>
+        <div class="flex notflex">
+            <fieldset class="bigForm center bigerText">
+                <legend>Личная информация</legend>
+                <form action="//httpbin.org/post" method="post">
+                    <p class="star">*</p>
+                    <input type="text" name="Имя" placeholder="Имя">
+                </form>
+                <form action="//httpbin.org/post" method="post" class="date">
+                    <label for="date"> Дата рождения:</label>
+                    <input id="date" type="date">
+                </form>
+                <div>
+                    <p class="star">*</p>
+                    <form action="//httpbin.org/post" method="post" class="radio">
+                        <label for="sex">Ваш пол:</label>
+                        <br>
+                        <div class="formdiv"></div>
+                        <input type="radio" name="sex" value="male"> Male
+                        <br>
+                        <input type="radio" name="sex" value="female"> Female
+                    </form>
+                </div>
+            </fieldset>
+            <fieldset class="bigForm center bigerText">
+                <legend>Контактные данные</legend>
+                <form action="//httpbin.org/post" method="post">
+                    <p class="star">*</p>
+                    <input type="password" placeholder="Пароль">
+                </form>
+                <form action="//httpbin.org/post" method="post">
+                    <input type="tel" placeholder="Номер телефона">
+                </form>
+                <form action="//httpbin.org/post" method="post" class="radio">
+                    <label class="radiolabel" for="time">Время, когда удобно с вами связаться:</label>
+                    <br>
+                    <div class="formdiv"></div>
+                    <input id="radio" type="radio" name="time" value="Morning"> <label for="radio">Morning</label>
+                    <br>
+                    <input type="radio" name="time" value="Afternoon"> Afternoon
+                    <br>
+                    <input type="radio" name="time" value="Evening"> Evening
+                    <br>
+                    <input type="radio" name="time" value="Night"> Night
+                </form>
+            </fieldset>
+        </div>
+        <p class="star endp">* - обязательно для заполнения</p>
+        <div class="centerbtn"><button class="commit">Зарегестрироваться</button></div>
+    </main>
+    <footer class="footerfooter">
+        <div>
+            <p class="bigDisplayNotDisplay">© 2023 Нордик кейтеринг</p>
+            <div class="footerConnect">
+                <p class="smallDisplayNotDisplay footerP">© 2023 Нордик кейтеринг</p>
+                <p class="footerP">+7 911 926 44 07</p>
+                <p class="footerP">restaurant@nordic-spb.ru</p>
+            </div>
+        </div>
+        <div>
+            <a href="" class="a_footer"><img src="/Sources/social/vk.svg" alt=""></a>
+            <a href="" class="a_footer"><img src="/Sources/social/facebook.svg" alt=""></a>
+            <a href="" class="a_footer"><img src="/Sources/social/twitter.svg" alt=""></a>
+            <a href="" class="a_footer"><img src="/Sources/social/instagram.svg" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
