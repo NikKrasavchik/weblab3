@@ -449,6 +449,7 @@ html {
         color: var(--white-color);
         font-weight: 100;
         opacity: 0.8;
+        filter: contrast(0.5);
     }
 
     .headerBig {
