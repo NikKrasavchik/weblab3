@@ -340,6 +340,7 @@ html {
 
     .headerWelcome {
         margin-left: 40px;
+        filter: contrast(0.5);
     }
 
     .headerComment {
@@ -391,7 +392,7 @@ html {
 
 @media screen and (min-width: 1430px) {	
     .headerImage {
-        background-image: url("Sources/img25.jpg");
+        background-image: url("Sources/27.jpg");
         text-align: center;
         background-repeat: repeat;
     }
